@@ -75,7 +75,7 @@ const Quality = () => {
           playsInline
           className="w-full h-[80vh] object-cover"
         >
-          <source src="public/assests/ContactUs.mp4" type="video/mp4" />
+          <source src="public/assets/ContactUs.mp4" type="video/mp4" />
         </video>
           {/* <img  alt="Quality control process" className="rounded-lg shadow-xl mx-auto" src="https://images.unsplash.com/photo-1551884171-004163219904" /> */}
         </motion.div>

@@ -22,7 +22,7 @@ const Hero = () => {
           playsInline
           className="w-full h-full object-cover filter brightness-[60%] blur-[2px]"
         >
-          <source src="public/assests/Hero Bg.mp4" type="video/mp4" />
+          <source src="public/assets/Hero Bg.mp4" type="video/mp4" />
         </video>
         {/* Add overlay to ensure text remains readable */}
         <div className="absolute inset-0 bg-black/40" />

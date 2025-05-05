@@ -12,21 +12,21 @@ const Products = () => {
       description: "Premium quality mono cartons for retail and display packaging",
       icon: Package,
       features: ["Custom sizes", "High-quality printing", "Eco-friendly materials"],
-      image: "public/assests/Mono Cartons.jpeg"
+      image: "public/assets/Mono Cartons.jpeg"
     },
     {
       name: "Litho Laminated Cartons",
       description: "Durable laminated cartons with superior print quality",
       icon: Box,
       features: ["Premium finish", "Enhanced durability", "Brand enhancement"],
-      image: "public/assests/Litho Laminated Cartons.jpeg"
+      image: "public/assets/Litho Laminated Cartons.jpeg"
     },
     {
       name: "Corrugated Boxes",
       description: "Strong and reliable corrugated packaging solutions",
       icon: PackageOpen,
       features: ["Custom strength", "Various flute profiles", "Stackable design"],
-      image: "public/assests/Corrogated Boxes.jpeg"
+      image: "public/assets/Corrogated Boxes.jpeg"
     },
     {
       name: "Rolls & Sheets",
