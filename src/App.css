@@ -1,21 +1,6 @@
-.App{
+.App {
   width: 100%;
-  color: #333333;
- overflow: hidden;
- padding: 0 2vw;
-}
-.products{
-  padding: 12vh 0vw;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.product-heading{
-  text-align: center;
-  margin-bottom: 15vh;
-  width: fit-content;
-}
-.view-cta{
-  margin-top: 10vh
 }

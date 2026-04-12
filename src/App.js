@@ -1,64 +1,84 @@
+import React, { useEffect, lazy, Suspense } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import Navbar from './components/Layout/Navbar';
+import Footer from './components/Layout/Footer';
+import ScrollToTop from './components/common/ScrollToTop';
+import WhatsAppButton from './components/common/WhatsAppButton';
+import BackToTop from './components/common/BackToTop';
 import './App.css';
-// import MouseFollower from "mouse-follower";
-import { useEffect,useRef } from "react";
-import Navbar from "./Navbar/Navbar"
-import Product from './Product/Product';
-import LandingPage from './Landing-Page/LandingPage';
-import Contact from './Contact/Contact';
-import About from './About us/About';
-import Cta from './CTA/Cta';
 
-// const initializeCursor = () => {
-//   MouseFollower.registerGSAP(gsap);
-//   const cursor = new MouseFollower({ skewing: 2 });
-//   $('[data-magnetic]').each(function () { new Magnetic(this); });
-//   return cursor;
-// };
+// Lazy load pages for code splitting
+const Home = lazy(() => import('./pages/Home'));
+const About = lazy(() => import('./pages/About'));
+const Products = lazy(() => import('./pages/Products'));
+const ProductDetail = lazy(() => import('./pages/ProductDetail'));
+const Industries = lazy(() => import('./pages/Industries'));
+const Gallery = lazy(() => import('./pages/Gallery'));
+const Quality = lazy(() => import('./pages/Quality'));
+const Quote = lazy(() => import('./pages/Quote'));
+const FAQ = lazy(() => import('./pages/FAQ'));
+const Contact = lazy(() => import('./pages/Contact'));
+const Privacy = lazy(() => import('./pages/Privacy'));
+const Terms = lazy(() => import('./pages/Terms'));
+const NotFound = lazy(() => import('./pages/NotFound'));
+
+// Loading fallback
+const PageLoader = () => (
+  <div style={{
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    minHeight: '100vh',
+    background: 'var(--background)'
+  }}>
+    <div style={{
+      width: '40px',
+      height: '40px',
+      border: '3px solid var(--border)',
+      borderTopColor: 'var(--primary)',
+      borderRadius: '50%',
+      animation: 'spin 0.8s linear infinite'
+    }} />
+    <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
+  </div>
+);
 
 function App() {
-  const boxes_description = "Corrugated boxes are a type of packaging made from corrugated cardboard, which consists of a fluted inner layer sandwiched between two flat outer layers. These boxes are known for their strength, durability, and versatility. They are widely used for shipping, storage, and as retail packaging for various products. Corrugated boxes offer excellent protection and support, making them ideal for transporting items while minimizing the risk of damage. They come in various sizes and styles to suit different packaging needs and are often customized with printing for branding and product identification. Corrugated boxes are eco-friendly and recyclable, making them a popular choice for sustainable packaging solutions."
-  const sheet_description = "Corrugated sheets are flat, strong, and lightweight materials made from corrugated cardboard, featuring a series of parallel ridges and furrows. They are commonly used for packaging, shipping, and as protective layers, providing strength and rigidity while remaining relatively lightweight. Corrugated sheets are highly versatile and can be customized for various applications, making them a popular choice in packaging and construction."
-  const roll_description = "Corrugated rolls are long sheets of strong, wavy cardboard. They're often used for wrapping and protecting items, especially when shipping or moving. These rolls can be easily cut to size and provide cushioning and support for various products."
-  
   useEffect(() => {
-    console.log("App loaded");
-  //  const cursor =initializeCursor();
-
-  //  const bootstrap = require('bootstrap');
-
-  //  // Activate the carousel
-  //  const carouselElement = document.querySelector('#carousel');
-  //  new bootstrap.Carousel(carouselElement, {
-  //    interval:3000,
-  //    ride:'carousel'
-  //  });
-  
-    // return () => {cursor.destroy();};
-  });
+    AOS.init({
+      duration: 800,
+      easing: 'ease-out',
+      once: true,
+      offset: 100,
+    });
+  }, []);
 
   return (
     <div className="App">
-      <Navbar/>
-      <LandingPage/>
-      {/* <Carousel/> */}
-      <div id="products" className='products'>
-        <h1 className='product-heading' >Products</h1>
-        <Product number = {1} heading = "Corrogated Boxes" description = {boxes_description} rotate = {false} />
-        <Product number = {2} heading = "Corrogated Sheets" description = {sheet_description} rotate = {true} />
-        <Product number = {3} heading = "Corrogated Rolls" description = {roll_description} rotate = {false} />
-        <div className='view-cta'>
-          <Cta className='View' name='View more'/>
-        </div>
-      </div>
-      <div>
-       <About/>
-      </div>
-      {/* <div>
-       <Uses/>
-      </div> */}
-      <div>
-        <Contact/>
-      </div>
+      <ScrollToTop />
+      <Navbar />
+      <Suspense fallback={<PageLoader />}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/products/:slug" element={<ProductDetail />} />
+          <Route path="/industries" element={<Industries />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/quality" element={<Quality />} />
+          <Route path="/quote" element={<Quote />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Suspense>
+      <Footer />
+      <WhatsAppButton />
+      <BackToTop />
     </div>
   );
 }

@@ -1,0 +1,253 @@
+/* ============================================
+   About Page Styles
+   ============================================ */
+
+/* --- Our Story Section --- */
+.about-story {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3xl);
+}
+
+.about-story__image {
+  flex: 0 0 45%;
+  max-width: 45%;
+}
+
+.about-story__image img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.about-story__content {
+  flex: 0 0 55%;
+  max-width: 55%;
+}
+
+.about-story__content h2 {
+  margin-bottom: var(--space-lg);
+}
+
+.about-story__content p {
+  margin-bottom: var(--space-md);
+  line-height: 1.8;
+}
+
+/* --- Mission & Vision Section --- */
+.about-mission-section {
+  background-color: var(--background-alt);
+}
+
+.about-mission-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-xl);
+}
+
+.about-mission-card {
+  background: var(--surface);
+  padding: var(--space-2xl) var(--space-xl);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-sm);
+  border-left: 4px solid var(--primary);
+  transition: all var(--transition-base);
+}
+
+.about-mission-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.about-mission-card__icon {
+  font-size: 2rem;
+  margin-bottom: var(--space-md);
+  line-height: 1;
+}
+
+.about-mission-card h3 {
+  margin-bottom: var(--space-md);
+}
+
+.about-mission-card p {
+  margin-bottom: 0;
+  line-height: 1.8;
+}
+
+/* --- Core Values Section --- */
+.about-values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-lg);
+}
+
+.about-value-card {
+  background: var(--surface);
+  padding: var(--space-xl);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-base);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-value-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.about-value-card__number {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--secondary);
+  line-height: 1;
+  margin-bottom: var(--space-md);
+  opacity: 0.6;
+}
+
+.about-value-card h4 {
+  margin-bottom: var(--space-sm);
+}
+
+.about-value-card p {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* --- Our Process Section --- */
+.about-process-section {
+  background-color: var(--background-alt);
+}
+
+.about-process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-xl);
+  position: relative;
+}
+
+/* Connecting line between process steps */
+.about-process-grid::before {
+  content: '';
+  position: absolute;
+  top: 24px;
+  left: calc(12.5% + 24px);
+  right: calc(12.5% + 24px);
+  height: 2px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary), var(--primary));
+  z-index: 0;
+}
+
+.about-process-step {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.about-process-step__number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: var(--primary);
+  color: var(--text-light);
+  border-radius: 50%;
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: var(--space-lg);
+  box-shadow: var(--shadow-md);
+  position: relative;
+}
+
+.about-process-step h4 {
+  margin-bottom: var(--space-sm);
+}
+
+.about-process-step p {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* --- CTA Section --- */
+.about-cta {
+  padding: var(--space-4xl) 0 calc(var(--space-4xl) + var(--space-md));
+  text-align: center;
+}
+
+.about-cta__actions {
+  display: flex;
+  gap: var(--space-md);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ============================================
+   Responsive Styles
+   ============================================ */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .about-story {
+    gap: var(--space-2xl);
+  }
+
+  .about-values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-process-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-2xl);
+  }
+
+  .about-process-grid::before {
+    display: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .about-story {
+    flex-direction: column;
+    gap: var(--space-2xl);
+  }
+
+  .about-story__image,
+  .about-story__content {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .about-story__image {
+    text-align: center;
+  }
+
+  .about-story__image img {
+    max-width: 320px;
+  }
+
+  .about-mission-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .about-values-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+
+  .about-process-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .about-cta {
+    padding: var(--space-3xl) 0 calc(var(--space-3xl) + var(--space-md));
+  }
+}
