@@ -2,12 +2,75 @@
    Navbar Styles
    ============================================ */
 
-.navbar {
+/* Outer wrapper holds top contact strip + main navbar */
+.navbar-wrapper {
   position: sticky;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
+  background-color: #ffffff;
+  transition: box-shadow 0.3s ease;
+}
+
+.navbar-wrapper--scrolled {
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Top contact strip */
+.navbar__topbar {
+  background: var(--primary, #8a5f49);
+  color: #fff;
+  font-size: 0.8rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.navbar__topbar-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 8px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.navbar__topbar-left,
+.navbar__topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.navbar__topbar-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.8rem;
+  letter-spacing: 0.2px;
+  opacity: 0.95;
+  transition: opacity 0.2s ease;
+}
+
+.navbar__topbar-item:hover {
+  opacity: 1;
+  color: #fff;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .navbar__topbar-left { display: none; }
+  .navbar__topbar-inner { justify-content: center; padding: 6px 12px; gap: 10px; }
+  .navbar__topbar-item--email { display: none; }
+  .navbar__topbar-item { font-size: 0.72rem; }
+}
+
+.navbar {
+  position: relative;
   height: var(--navbar-height, 72px);
   background-color: #ffffff;
   display: flex;

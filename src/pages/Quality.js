@@ -39,9 +39,9 @@ const qualityStandards = [
 ];
 
 const certifications = [
-  { name: 'ISO 9001:2015', description: 'Quality Management System certified', status: 'Working Towards' },
-  { name: 'FSC Certified', description: 'Responsible forestry and sourcing', status: 'Working Towards' },
+  { name: 'ISO 9001:2015', description: 'Quality Management System compliant', status: 'Compliant' },
   { name: 'BIS Standards', description: 'Bureau of Indian Standards compliant', status: 'Compliant' },
+  { name: 'FSC Certified', description: 'Responsible forestry and sourcing', status: 'Working Towards' },
   { name: 'FSSAI Approved', description: 'Food-safe packaging materials', status: 'Compliant' },
 ];
 
@@ -66,7 +66,7 @@ const Quality = () => {
               <p className="section-subtitle">Our Promise</p>
               <h2>Uncompromising Quality Standards</h2>
               <p>
-                At Dharmik Packaging, quality isn't just a department — it's a culture. From raw material 
+                At Dharmik Packaging Industries, quality isn't just a department — it's a culture. From raw material 
                 selection to final delivery, every step in our process is governed by strict quality 
                 protocols that ensure our corrugated packaging products meet the highest industry standards.
               </p>

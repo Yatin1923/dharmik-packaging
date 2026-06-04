@@ -1,6 +1,8 @@
-import boxImage from '../assets/images/corrogated-box.webp';
 import sheetImage from '../assets/images/corrogated-sheet.webp';
 import rollImage from '../assets/images/corrogated-roll.webp';
+
+// High-quality image for the Corrugated Boxes product card / detail (overrides the older local webp)
+const corrugatedBoxesHero = 'https://images.unsplash.com/photo-1607344645866-009c320b63e0?auto=format&fit=crop&w=1200&q=80';
 
 export const products = [
   {
@@ -9,7 +11,7 @@ export const products = [
     name: 'Corrugated Boxes',
     shortDescription: 'Durable and versatile corrugated boxes for shipping, storage, and retail packaging. Custom sizes and printing available.',
     description: 'Corrugated boxes are the backbone of modern packaging solutions. Made from corrugated cardboard featuring a fluted inner layer sandwiched between two flat outer layers, these boxes deliver exceptional strength, durability, and versatility. They are the go-to choice for shipping, storage, and retail packaging across industries worldwide.',
-    image: boxImage,
+    image: corrugatedBoxesHero,
     features: [
       'Superior strength-to-weight ratio',
       'Custom sizes and dimensions available',

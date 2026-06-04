@@ -10,12 +10,18 @@ const galleryItems = [
   { id: 1, image: boxImage, title: 'Custom Corrugated Boxes', category: 'Boxes' },
   { id: 2, image: sheetImage, title: 'Corrugated Sheet Production', category: 'Sheets' },
   { id: 3, image: rollImage, title: 'Corrugated Roll Manufacturing', category: 'Rolls' },
-  { id: 4, image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80', title: 'Packaging Warehouse', category: 'Facility' },
-  { id: 5, image: 'https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=800&q=80', title: 'Bulk Order Packaging', category: 'Boxes' },
-  { id: 6, image: 'https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=800&q=80', title: 'Manufacturing Process', category: 'Custom' },
+  { id: 4, image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80', title: 'Packaging Warehouse', category: 'Facility' },
+  { id: 5, image: 'https://images.unsplash.com/photo-1607344645866-009c320b63e0?auto=format&fit=crop&w=1200&q=80', title: 'Bulk Order Packaging', category: 'Boxes' },
+  { id: 6, image: 'https://images.unsplash.com/photo-1601598851547-4302969d0614?auto=format&fit=crop&w=1200&q=80', title: 'Manufacturing Process', category: 'Process' },
+  { id: 7, image: 'https://images.unsplash.com/photo-1530939027401-9e8e7a1d3e1c?auto=format&fit=crop&w=1200&q=80', title: 'Production Floor', category: 'Facility' },
+  { id: 8, image: 'https://images.unsplash.com/photo-1567333936-2caf2c4a30dc?auto=format&fit=crop&w=1200&q=80', title: 'Die-Cutting Machinery', category: 'Machinery' },
+  { id: 9, image: 'https://images.unsplash.com/photo-1607344645866-009c320b63e0?auto=format&fit=crop&w=1200&q=80', title: 'Ready-to-Ship Cartons', category: 'Boxes' },
+  { id: 10, image: 'https://images.unsplash.com/photo-1606857521015-7f9fcf423740?auto=format&fit=crop&w=1200&q=80', title: 'Quality Inspection', category: 'Process' },
+  { id: 11, image: 'https://images.unsplash.com/photo-1612257999691-c01a4b14e91d?auto=format&fit=crop&w=1200&q=80', title: 'Printed Retail Boxes', category: 'Boxes' },
+  { id: 12, image: 'https://images.unsplash.com/photo-1597427053710-d864da3ce3a8?auto=format&fit=crop&w=1200&q=80', title: 'Corrugation Line', category: 'Machinery' },
 ];
 
-const categories = ['All', 'Boxes', 'Sheets', 'Rolls', 'Facility', 'Custom'];
+const categories = ['All', 'Boxes', 'Sheets', 'Rolls', 'Facility', 'Machinery', 'Process'];
 
 const Gallery = () => {
   const [activeCategory, setActiveCategory] = useState('All');
@@ -93,7 +99,7 @@ const Gallery = () => {
         <div className="container" style={{ textAlign: 'center' }}>
           <h2>Want to See More?</h2>
           <p style={{ maxWidth: '500px', margin: '0 auto var(--space-xl)' }}>
-            Contact us for samples or visit our manufacturing facility in Vadodara.
+            Contact us for samples or visit our manufacturing facility in Gujarat.
           </p>
           <Link to="/contact" className="btn-accent">Get in Touch</Link>
         </div>

@@ -19,7 +19,7 @@ const Privacy = () => {
           <div className="legal-content">
             <h2>Introduction</h2>
             <p>
-              Dharmik Packaging ("we," "our," or "us") respects your privacy and is committed to 
+              Dharmik Packaging Industries ("we," "our," or "us") respects your privacy and is committed to 
               protecting your personal data. This privacy policy explains how we collect, use, and 
               safeguard your information when you visit our website or interact with our services.
             </p>
@@ -71,9 +71,9 @@ const Privacy = () => {
               If you have any questions about this Privacy Policy, please contact us at:
             </p>
             <ul>
-              <li><strong>Email:</strong> dharmikpackaging@gmail.com</li>
-              <li><strong>Phone:</strong> +91 99256 27417</li>
-              <li><strong>Address:</strong> N.M. Patel Estate at & post Raniya, Taluka Savli, Vadodara, Gujarat</li>
+              <li><strong>Email:</strong> dharmikpackagingind@gmail.com</li>
+              <li><strong>Phone:</strong> +91 99256 27417, +91 88493 07823</li>
+              <li><strong>Address:</strong> Ahmedabad, Gujarat, India</li>
             </ul>
 
             <h2>Changes to This Policy</h2>

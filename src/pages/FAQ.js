@@ -14,7 +14,7 @@ const faqData = [
       },
       {
         q: 'How do I get a price quote?',
-        a: 'You can request a quote through our online form on the Request a Quote page, call us at +91 99256 27417, or email us at dharmikpackaging@gmail.com. We typically respond within 24 hours.',
+        a: 'You can request a quote through our online form on the Request a Quote page, call us at +91 99256 27417 or +91 88493 07823, or email us at dharmikpackagingind@gmail.com. We typically respond within 24 hours.',
       },
       {
         q: 'Do you offer bulk pricing discounts?',
@@ -146,6 +146,7 @@ const FAQ = () => {
           <div style={{ display: 'flex', gap: 'var(--space-md)', justifyContent: 'center', flexWrap: 'wrap', marginTop: 'var(--space-xl)' }}>
             <Link to="/contact" className="btn-primary">Contact Us</Link>
             <a href="tel:+919925627417" className="btn-secondary">Call +91 99256 27417</a>
+            <a href="tel:+918849307823" className="btn-secondary">Call +91 88493 07823</a>
           </div>
         </div>
       </section>

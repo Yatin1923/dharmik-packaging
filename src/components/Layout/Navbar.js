@@ -3,6 +3,9 @@ import { Link, useLocation } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import PhoneIcon from '@mui/icons-material/Phone';
+import EmailIcon from '@mui/icons-material/Email';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -49,11 +52,33 @@ const Navbar = () => {
   };
 
   return (
-    <header className={`navbar ${isScrolled ? 'navbar--scrolled' : ''}`}>
+    <header className={`navbar-wrapper ${isScrolled ? 'navbar-wrapper--scrolled' : ''}`}>
+      <div className="navbar__topbar">
+        <div className="navbar__topbar-inner">
+          <div className="navbar__topbar-left">
+            <span className="navbar__topbar-item">
+              <AccessTimeIcon fontSize="inherit" />
+              Mon – Sat · 8:30 AM – 6:00 PM
+            </span>
+          </div>
+          <div className="navbar__topbar-right">
+            <a href="tel:+919925627417" className="navbar__topbar-item">
+              <PhoneIcon fontSize="inherit" /> +91 99256 27417
+            </a>
+            <a href="tel:+918849307823" className="navbar__topbar-item">
+              <PhoneIcon fontSize="inherit" /> +91 88493 07823
+            </a>
+            <a href="mailto:dharmikpackagingind@gmail.com" className="navbar__topbar-item navbar__topbar-item--email">
+              <EmailIcon fontSize="inherit" /> dharmikpackagingind@gmail.com
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className={`navbar ${isScrolled ? 'navbar--scrolled' : ''}`}>
       <div className="navbar__container">
         <Link to="/" className="navbar__logo">
           <span className="navbar__logo-primary">Dharmik</span>
-          <span className="navbar__logo-secondary">Packaging</span>
+          <span className="navbar__logo-secondary">Packaging Industries</span>
         </Link>
 
         <nav className={`navbar__nav ${isOpen ? 'navbar__nav--open' : ''}`}>
@@ -180,6 +205,7 @@ const Navbar = () => {
       </div>
 
       {isOpen && <div className="navbar__overlay" onClick={() => setIsOpen(false)} />}
+      </div>
     </header>
   );
 };

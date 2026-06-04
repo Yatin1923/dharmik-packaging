@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -20,11 +21,12 @@ const Footer = () => {
           <div className="footer__col footer__company">
             <div className="footer__logo">
               <span className="footer__logo-primary">Dharmik</span>
-              <span className="footer__logo-secondary">Packaging</span>
+              <span className="footer__logo-secondary">Packaging Industries</span>
             </div>
             <p className="footer__description">
-              Leading manufacturer of premium corrugated packaging solutions.
-              Delivering quality, reliability, and innovation since establishment.
+              With more than two decades of experience, Dharmik Packaging Industries
+              is a trusted manufacturer of premium corrugated boxes, sheets, and
+              rolls — delivering quality, reliability, and innovation.
             </p>
             <div className="footer__social">
               <button className="footer__social-link" aria-label="Facebook" onClick={() => {}}>
@@ -96,16 +98,28 @@ const Footer = () => {
               <li>
                 <LocationOnIcon className="footer__contact-icon" />
                 <span>
-                  N.M. Patel Estate at &amp; post Raniya, Taluka Savli, Vadodara, Gujarat
+                  Ahmedabad, Gujarat, India
                 </span>
               </li>
               <li>
                 <PhoneIcon className="footer__contact-icon" />
-                <a href="tel:+919925627417">+91 99256 27417</a>
+                <span>
+                  <a href="tel:+919925627417">+91 99256 27417</a>
+                  <br />
+                  <a href="tel:+918849307823">+91 88493 07823</a>
+                </span>
               </li>
               <li>
                 <EmailIcon className="footer__contact-icon" />
-                <a href="mailto:dharmikpackaging@gmail.com">dharmikpackaging@gmail.com</a>
+                <a href="mailto:dharmikpackagingind@gmail.com">dharmikpackagingind@gmail.com</a>
+              </li>
+              <li>
+                <AccessTimeIcon className="footer__contact-icon" />
+                <span>
+                  <strong>Business Hours</strong>
+                  <br />
+                  Mon – Sat · 8:30 AM – 6:00 PM
+                </span>
               </li>
             </ul>
           </div>
@@ -116,7 +130,7 @@ const Footer = () => {
       <div className="footer__bottom">
         <div className="footer__container">
           <div className="footer__bottom-content">
-            <p>&copy; {currentYear} Dharmik Packaging. All rights reserved.</p>
+            <p>&copy; {currentYear} Dharmik Packaging Industries. All rights reserved.</p>
             <div className="footer__bottom-links">
               <Link to="/privacy">Privacy Policy</Link>
               <Link to="/terms">Terms of Service</Link>

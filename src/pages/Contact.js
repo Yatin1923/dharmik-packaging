@@ -65,28 +65,32 @@ const Contact = () => {
                 <LocationOnIcon />
               </div>
               <h4>Our Location</h4>
-              <p>N.M. Patel Estate at & post Raniya,<br />Taluka Savli, Vadodara,<br />Gujarat, India</p>
+              <p>Ahmedabad,<br />Gujarat, India</p>
             </div>
             <div className="contact-info-card" data-aos="fade-up" data-aos-delay="100">
               <div className="contact-info-card__icon">
                 <PhoneIcon />
               </div>
-              <h4>Phone Number</h4>
-              <p><a href="tel:+919925627417">+91 99256 27417</a></p>
+              <h4>Phone Numbers</h4>
+              <p>
+                <a href="tel:+919925627417">+91 99256 27417</a>
+                <br />
+                <a href="tel:+918849307823">+91 88493 07823</a>
+              </p>
             </div>
             <div className="contact-info-card" data-aos="fade-up" data-aos-delay="200">
               <div className="contact-info-card__icon">
                 <EmailIcon />
               </div>
               <h4>Email Address</h4>
-              <p><a href="mailto:dharmikpackaging@gmail.com">dharmikpackaging@gmail.com</a></p>
+              <p><a href="mailto:dharmikpackagingind@gmail.com">dharmikpackagingind@gmail.com</a></p>
             </div>
             <div className="contact-info-card" data-aos="fade-up" data-aos-delay="300">
               <div className="contact-info-card__icon">
                 <AccessTimeIcon />
               </div>
               <h4>Business Hours</h4>
-              <p>Monday - Saturday<br />9:00 AM - 7:00 PM</p>
+              <p>Monday &ndash; Saturday<br />8:30 AM &ndash; 6:00 PM</p>
             </div>
           </div>
         </div>
@@ -143,8 +147,8 @@ const Contact = () => {
             <div className="contact-map" data-aos="fade-left">
               <div className="contact-map__placeholder">
                 <iframe
-                  title="Dharmik Packaging Location"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.8!2d73.3!3d22.3!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDE4JzAwLjAiTiA3M8KwMTgnMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
+                  title="Dharmik Packaging Industries Location"
+                  src="https://www.google.com/maps?q=Ahmedabad,Gujarat,India&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0, borderRadius: 'var(--border-radius-md)' }}
@@ -156,6 +160,15 @@ const Contact = () => {
               <div className="contact-map__info">
                 <h4>Visit Our Factory</h4>
                 <p>We welcome you to visit our manufacturing facility. Schedule a visit to see our production process firsthand.</p>
+                <a
+                  className="btn-secondary"
+                  href="https://www.google.com/maps/dir/?api=1&destination=Ahmedabad+Gujarat+India"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ marginTop: 'var(--space-md)' }}
+                >
+                  Get Directions
+                </a>
               </div>
             </div>
           </div>

@@ -165,8 +165,9 @@ const Quote = () => {
                 <h4>Need Help?</h4>
                 <p>Call us directly for immediate assistance:</p>
                 <a href="tel:+919925627417" className="quote-sidebar__phone">+91 99256 27417</a>
+                <a href="tel:+918849307823" className="quote-sidebar__phone" style={{ display: 'block', marginTop: '4px' }}>+91 88493 07823</a>
                 <p style={{ marginTop: 'var(--space-md)' }}>Or email us at:</p>
-                <a href="mailto:dharmikpackaging@gmail.com" className="quote-sidebar__email">dharmikpackaging@gmail.com</a>
+                <a href="mailto:dharmikpackagingind@gmail.com" className="quote-sidebar__email">dharmikpackagingind@gmail.com</a>
               </div>
             </div>
           </div>

@@ -5,7 +5,7 @@ import TrackChangesIcon from '@mui/icons-material/TrackChanges';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import './About.css';
 
-const aboutImage = 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=800&q=80';
+const aboutImage = 'https://images.unsplash.com/photo-1565891741441-64926e441838?auto=format&fit=crop&w=1200&q=80';
 
 const About = () => {
   return (
@@ -16,8 +16,8 @@ const About = () => {
       <section className="page-hero">
         <div className="container">
           <p className="section-subtitle">About Us</p>
-          <h1>About Dharmik Packaging</h1>
-          <p>Crafting premium corrugated packaging solutions with dedication, quality, and innovation.</p>
+          <h1>About Dharmik Packaging Industries</h1>
+          <p>More than two decades of crafting premium corrugated packaging solutions with dedication, quality, and innovation.</p>
         </div>
       </section>
 
@@ -26,22 +26,22 @@ const About = () => {
         <div className="container">
           <div className="about-story">
             <div className="about-story__image" data-aos="fade-right">
-              <img src={aboutImage} alt="Dharmik Packaging" />
+              <img src={aboutImage} alt="Dharmik Packaging Industries factory operations" />
             </div>
             <div className="about-story__content" data-aos="fade-left">
               <p className="section-subtitle">Our Story</p>
               <h2>A Legacy of Packaging Excellence</h2>
               <p>
-                Founded in Vadodara, Gujarat, Dharmik Packaging has grown from a small family enterprise
-                into a leading manufacturer of corrugated packaging solutions. Our journey began with a
-                simple mission: to provide businesses with packaging that truly protects their products
-                and represents their brand.
+                Founded in Gujarat, Dharmik Packaging Industries has grown over more than two decades
+                from a small family enterprise into a trusted manufacturer of corrugated packaging
+                solutions. Our journey began with a simple mission: to provide businesses with
+                packaging that truly protects their products and represents their brand.
               </p>
               <p>
-                Located at N.M. Patel Estate in Raniya, Taluka Savli, our modern manufacturing facility
-                is equipped with state-of-the-art machinery that enables us to produce high-quality
-                corrugated boxes, sheets, and rolls. We serve businesses across Gujarat and beyond,
-                delivering packaging solutions that meet the highest standards of quality and durability.
+                Our modern manufacturing facility is equipped with state-of-the-art machinery that
+                enables us to produce high-quality corrugated boxes, sheets, and rolls. We serve
+                businesses across Gujarat and beyond, delivering packaging solutions that meet the
+                highest standards of quality and durability.
               </p>
               <p>
                 What sets us apart is our unwavering commitment to customer satisfaction. We work closely

@@ -19,14 +19,14 @@ const Terms = () => {
           <div className="legal-content">
             <h2>Acceptance of Terms</h2>
             <p>
-              By accessing and using the Dharmik Packaging website, you agree to be bound by these 
+              By accessing and using the Dharmik Packaging Industries website, you agree to be bound by these 
               Terms of Service. If you do not agree with any part of these terms, please do not use 
               our website.
             </p>
 
             <h2>Products & Services</h2>
             <p>
-              Dharmik Packaging manufactures and supplies corrugated packaging products including 
+              Dharmik Packaging Industries manufactures and supplies corrugated packaging products including 
               boxes, sheets, and rolls. All product descriptions, specifications, and images on our 
               website are for general information purposes and may vary from actual products.
             </p>
@@ -49,7 +49,7 @@ const Terms = () => {
             <h2>Delivery</h2>
             <ul>
               <li>Delivery timelines are estimated and may vary based on order complexity and volume.</li>
-              <li>Dharmik Packaging is not liable for delays caused by circumstances beyond our control.</li>
+              <li>Dharmik Packaging Industries is not liable for delays caused by circumstances beyond our control.</li>
               <li>Risk of loss or damage transfers to the buyer upon delivery at the agreed location.</li>
             </ul>
 
@@ -63,12 +63,12 @@ const Terms = () => {
             <h2>Intellectual Property</h2>
             <p>
               All content on this website, including text, images, logos, and design, is the property 
-              of Dharmik Packaging and is protected by applicable intellectual property laws.
+              of Dharmik Packaging Industries and is protected by applicable intellectual property laws.
             </p>
 
             <h2>Limitation of Liability</h2>
             <p>
-              Dharmik Packaging shall not be liable for any indirect, incidental, or consequential 
+              Dharmik Packaging Industries shall not be liable for any indirect, incidental, or consequential 
               damages arising from the use of our products or services beyond the value of the 
               specific order in question.
             </p>
@@ -76,13 +76,13 @@ const Terms = () => {
             <h2>Governing Law</h2>
             <p>
               These Terms of Service are governed by the laws of India. Any disputes shall be subject 
-              to the exclusive jurisdiction of the courts in Vadodara, Gujarat.
+              to the exclusive jurisdiction of the courts in Ahmedabad, Gujarat.
             </p>
 
             <h2>Contact</h2>
             <p>
               For questions regarding these Terms of Service, please contact us at 
-              dharmikpackaging@gmail.com or call +91 99256 27417.
+              dharmikpackagingind@gmail.com or call +91 99256 27417 / +91 88493 07823.
             </p>
           </div>
         </div>
