@@ -65,7 +65,7 @@ const Contact = () => {
                 <LocationOnIcon />
               </div>
               <h4>Our Location</h4>
-              <p>Ahmedabad,<br />Gujarat, India</p>
+              <p>Patel Estate, N. M., At. Po. Raniya,<br />Savli, Gujarat 391780</p>
             </div>
             <div className="contact-info-card" data-aos="fade-up" data-aos-delay="100">
               <div className="contact-info-card__icon">
@@ -148,7 +148,7 @@ const Contact = () => {
               <div className="contact-map__placeholder">
                 <iframe
                   title="Dharmik Packaging Industries Location"
-                  src="https://www.google.com/maps?q=Ahmedabad,Gujarat,India&output=embed"
+                  src="https://www.google.com/maps?q=Dharmik+Packaging+Industries,+Raniya,+Savli,+Gujarat+391780&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0, borderRadius: 'var(--border-radius-md)' }}
@@ -162,7 +162,7 @@ const Contact = () => {
                 <p>We welcome you to visit our manufacturing facility. Schedule a visit to see our production process firsthand.</p>
                 <a
                   className="btn-secondary"
-                  href="https://www.google.com/maps/dir/?api=1&destination=Ahmedabad+Gujarat+India"
+                  href="https://maps.app.goo.gl/YFPGo6MkmexVVyr96"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ marginTop: 'var(--space-md)' }}

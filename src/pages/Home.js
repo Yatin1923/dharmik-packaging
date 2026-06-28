@@ -393,12 +393,12 @@ const Home = () => {
                 <LocationOnIcon />
                 <div>
                   <h4>Address</h4>
-                  <p>Ahmedabad, Gujarat, India</p>
+                  <p>Patel Estate, N. M., At. Po. Raniya, Savli, Gujarat 391780</p>
                 </div>
               </div>
               <a
                 className="btn-primary"
-                href="https://www.google.com/maps/dir/?api=1&destination=Ahmedabad+Gujarat+India"
+                href="https://maps.app.goo.gl/YFPGo6MkmexVVyr96"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -408,7 +408,7 @@ const Home = () => {
             <div className="location-map" data-aos="fade-left">
               <iframe
                 title="Dharmik Packaging Industries Location"
-                src="https://www.google.com/maps?q=Ahmedabad,Gujarat,India&output=embed"
+                src="https://www.google.com/maps?q=Dharmik+Packaging+Industries,+Raniya,+Savli,+Gujarat+391780&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0, borderRadius: 'var(--border-radius-md)' }}

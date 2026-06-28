@@ -73,7 +73,7 @@ const Privacy = () => {
             <ul>
               <li><strong>Email:</strong> dharmikpackagingind@gmail.com</li>
               <li><strong>Phone:</strong> +91 99256 27417, +91 88493 07823</li>
-              <li><strong>Address:</strong> Ahmedabad, Gujarat, India</li>
+              <li><strong>Address:</strong> Patel Estate, N. M., At. Po. Raniya, Savli, Gujarat 391780</li>
             </ul>
 
             <h2>Changes to This Policy</h2>

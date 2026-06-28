@@ -76,7 +76,7 @@ const Terms = () => {
             <h2>Governing Law</h2>
             <p>
               These Terms of Service are governed by the laws of India. Any disputes shall be subject 
-              to the exclusive jurisdiction of the courts in Ahmedabad, Gujarat.
+              to the exclusive jurisdiction of the courts in Vadodara, Gujarat.
             </p>
 
             <h2>Contact</h2>

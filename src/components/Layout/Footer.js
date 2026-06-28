@@ -98,7 +98,7 @@ const Footer = () => {
               <li>
                 <LocationOnIcon className="footer__contact-icon" />
                 <span>
-                  Ahmedabad, Gujarat, India
+                  Patel Estate, N. M., At. Po. Raniya, Savli, Gujarat 391780
                 </span>
               </li>
               <li>
